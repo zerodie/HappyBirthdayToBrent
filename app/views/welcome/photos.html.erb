@@ -7,14 +7,13 @@
 	    <div id="myCarousel" class="carousel slide">
 	      <div class="carousel-inner">
 	      	<div class="item active">
-	          <img src="/waiting.jpg" alt="">
+	          <img src="/1.jpg" alt="">
 	        </div>
+	        <% (2..14).each do |i| %>
 	        <div class="item">
-	          <img src="/Baxter.jpg" alt="">
+	          <img src="/<%= i %>.jpg" alt="">
 	        </div>
-	        <div class="item">
-	          <img src="/Birdee.jpg" alt="">
-	        </div>
+	        <% end %>
 	      </div>
 	      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
 	      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
